@@ -3,11 +3,15 @@
 
 #include <iostream>
 
+using namespace std;
+
 class Stack{
     public:
     //Cria pilha
     Stack();
 
+    //Retorna o tamanho da pilha
+    int GetSize();
     //insere elemento no topo
     void UpStack(double k);
 
@@ -33,4 +37,6 @@ class Stack{
     private:
     double *elements_;
     int size_:
-}
+};
+
+#endif
